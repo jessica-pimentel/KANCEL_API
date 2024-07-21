@@ -9,6 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "domain_kancel", "..\domain_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "infra_kancel", "..\infra_kancel\infra_kancel.csproj", "{525C6ED1-4E36-4E62-861F-265B1393F2DF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{CF5B0092-1911-4323-8162-50C92EEA74E3}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
