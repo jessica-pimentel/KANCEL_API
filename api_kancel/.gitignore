@@ -1,0 +1,4 @@
+# Ignorar arquivos e pastas gerados pelo Visual Studio
+.vs/
+*.vsidx
+*.vscode
