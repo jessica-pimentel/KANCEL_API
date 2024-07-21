@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\infra_kancel\\infra_kancel.csproj": {}
+    "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\BackEnd\\infra_kancel\\infra_kancel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\domain_kancel\\domain_kancel.csproj": {
+    "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\BackEnd\\domain_kancel\\domain_kancel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\domain_kancel\\domain_kancel.csproj",
+        "projectUniqueName": "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\BackEnd\\domain_kancel\\domain_kancel.csproj",
         "projectName": "domain_kancel",
-        "projectPath": "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\domain_kancel\\domain_kancel.csproj",
+        "projectPath": "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\BackEnd\\domain_kancel\\domain_kancel.csproj",
         "packagesPath": "C:\\Users\\jppim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\domain_kancel\\obj\\",
+        "outputPath": "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\BackEnd\\domain_kancel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jppim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\infra_kancel\\infra_kancel.csproj": {
+    "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\BackEnd\\infra_kancel\\infra_kancel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\infra_kancel\\infra_kancel.csproj",
+        "projectUniqueName": "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\BackEnd\\infra_kancel\\infra_kancel.csproj",
         "projectName": "infra_kancel",
-        "projectPath": "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\infra_kancel\\infra_kancel.csproj",
+        "projectPath": "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\BackEnd\\infra_kancel\\infra_kancel.csproj",
         "packagesPath": "C:\\Users\\jppim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\infra_kancel\\obj\\",
+        "outputPath": "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\BackEnd\\infra_kancel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jppim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -90,8 +90,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\domain_kancel\\domain_kancel.csproj": {
-                "projectPath": "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\domain_kancel\\domain_kancel.csproj"
+              "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\BackEnd\\domain_kancel\\domain_kancel.csproj": {
+                "projectPath": "C:\\Users\\jppim\\source\\repos\\Projects\\KANCEL\\BackEnd\\domain_kancel\\domain_kancel.csproj"
               }
             }
           }

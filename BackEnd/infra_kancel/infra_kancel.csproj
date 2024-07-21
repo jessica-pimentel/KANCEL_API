@@ -10,4 +10,8 @@
     <ProjectReference Include="..\domain_kancel\domain_kancel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
 </Project>

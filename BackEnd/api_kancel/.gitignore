@@ -2,3 +2,29 @@
 .vs/
 *.vsidx
 *.vscode
+
+# Pastas de build e binários
+bin/
+obj/
+
+# Pastas e arquivos de cache do Visual Studio
+.vs/
+*.user
+*.suo
+*.vscode
+
+# Arquivos de log
+*.log
+
+# Pastas do NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Arquivos de configuração do IDE
+*.ide/
+.idea/
+
+# Pastas de Debug
+Debug/
+Release/
