@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "infra_kancel/1.0.0": {
+        "dependencies": {
+          "domain_kancel": "1.0.0"
+        },
+        "runtime": {
+          "infra_kancel.dll": {}
+        }
+      },
+      "domain_kancel/1.0.0": {
+        "runtime": {
+          "domain_kancel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "infra_kancel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "domain_kancel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

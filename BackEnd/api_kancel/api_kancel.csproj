@@ -7,11 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\domain_kancel\domain_kancel.csproj" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controller\" />
+    <ProjectReference Include="..\domain_kancel\domain_kancel.csproj" />
+	<ProjectReference Include="..\infra_kancel\infra_kancel.csproj" />
   </ItemGroup>
 
 </Project>

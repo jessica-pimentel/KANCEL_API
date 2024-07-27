@@ -1,7 +1,7 @@
 ﻿using domain_Kancel.Enum;
 using domain_Kancel.Models.Global;
 
-namespace domain_Kancel.Models
+namespace domain_kancel.Models.Financial
 {
     public class SalaryCard : BaseModel
     {
