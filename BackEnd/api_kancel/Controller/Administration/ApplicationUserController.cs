@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace api_kancel.Controller.Administration
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("v1/[controller]")]
     public class ApplicationUserController : ControllerBase
     {
         private readonly IApplicationUserService _applicationUserService;

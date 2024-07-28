@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("infra_kancel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67ac4d2ddff71fff299657ff557e7ba8213dabda")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+389dded3677d7b4434dc8608358876d8eb98b336")]
 [assembly: System.Reflection.AssemblyProductAttribute("infra_kancel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("infra_kancel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

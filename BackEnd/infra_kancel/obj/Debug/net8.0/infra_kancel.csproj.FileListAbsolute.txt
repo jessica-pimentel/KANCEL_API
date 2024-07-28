@@ -14,3 +14,5 @@ C:\Users\jppim\source\repos\Projects\KANCEL\BackEnd\infra_kancel\obj\Debug\net8.
 C:\Users\jppim\source\repos\Projects\KANCEL\BackEnd\infra_kancel\obj\Debug\net8.0\refint\infra_kancel.dll
 C:\Users\jppim\source\repos\Projects\KANCEL\BackEnd\infra_kancel\obj\Debug\net8.0\infra_kancel.pdb
 C:\Users\jppim\source\repos\Projects\KANCEL\BackEnd\infra_kancel\obj\Debug\net8.0\ref\infra_kancel.dll
+C:\Users\jppim\source\repos\Projects\KANCEL\BackEnd\infra_kancel\bin\Debug\net8.0\infra_kancel.runtimeconfig.json
+C:\Users\jppim\source\repos\Projects\KANCEL\BackEnd\infra_kancel\obj\Debug\net8.0\infra_kancel.genruntimeconfig.cache

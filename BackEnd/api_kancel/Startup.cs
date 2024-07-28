@@ -1,4 +1,6 @@
 ﻿using api_kancel.Configuration;
+using infra_kancel.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace api_kancel
 {
@@ -14,7 +16,10 @@ namespace api_kancel
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddInfrastructureServices(); 
+            services.AddInfrastructureServices();
+
+            services.AddDbContext<KancelContext>(options =>
+                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -27,6 +32,12 @@ namespace api_kancel
             {
                 app.UseExceptionHandler("/Error"); 
                 app.UseHsts();
+            }
+
+            string dbPath = Path.Combine(env.ContentRootPath, "DB");
+            if (!Directory.Exists(dbPath))
+            {
+                Directory.CreateDirectory(dbPath);
             }
 
             app.UseHttpsRedirection();
