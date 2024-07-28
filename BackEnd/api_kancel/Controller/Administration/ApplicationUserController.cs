@@ -20,7 +20,7 @@ namespace api_kancel.Controller.Administration
         {
             var r = await _applicationUserService.Login(email, password);
 
-            if (r) return Ok();
+            if (r != null) return Ok(r);
 
             return BadRequest("Email ou senha errados, tente novamente!");
             
@@ -38,9 +38,9 @@ namespace api_kancel.Controller.Administration
         }
 
         [HttpPut("updatePassword")]
-        public async Task<ActionResult> UpdatePassword(string newPassword, string lastPassword)
+        public async Task<ActionResult> UpdatePassword(Guid applicationUserId, string newPassword, string lastPassword)
         {
-            var r = await _applicationUserService.UpdatePassword(newPassword, lastPassword);
+            var r = await _applicationUserService.UpdatePassword(applicationUserId, newPassword, lastPassword);
 
             if (r) return Ok("Senha atualizada com sucesso!");
 

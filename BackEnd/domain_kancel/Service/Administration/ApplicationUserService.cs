@@ -17,10 +17,9 @@ namespace domain_kancel.Service
             _applicationUserRepository = applicationUserRepository;
         }
 
-        public async Task<bool> Login(string email, string password)
+        public async Task<ApplicationUser> Login(string email, string password)
         {
-            await _applicationUserRepository.Login(email, password);
-            return true;
+            return await _applicationUserRepository.Login(email, password);
         }
 
         public async Task<bool> Add(ApplicationUser applicationUser)
@@ -29,9 +28,9 @@ namespace domain_kancel.Service
             return true;
         }
 
-        public async Task<bool> UpdatePassword(string newPassword, string lastPassword)
+        public async Task<bool> UpdatePassword(Guid ApplicationUserId, string newPassword, string lastPassword)
         {
-            await _applicationUserRepository.UpdatePassword(newPassword, lastPassword);
+            await _applicationUserRepository.UpdatePassword(ApplicationUserId, newPassword, lastPassword);
             return true;
         }
     }

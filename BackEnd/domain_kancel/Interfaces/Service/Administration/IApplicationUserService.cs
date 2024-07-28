@@ -9,8 +9,8 @@ namespace domain_kancel.Interfaces.Repository.Administration
 {
     public interface IApplicationUserService
     {
-        Task<bool> Login(string email, string password);
+        Task<ApplicationUser> Login(string email, string password);
         Task<bool> Add(ApplicationUser applicationUser);
-        Task<bool> UpdatePassword(string newPassword, string lastPassword);
+        Task<bool> UpdatePassword(Guid applicationUserId, string newPassword, string lastPassword);
     }
 }

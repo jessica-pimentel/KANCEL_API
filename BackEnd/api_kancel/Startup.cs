@@ -1,5 +1,8 @@
 ﻿using api_kancel.Configuration;
 using infra_kancel.Context;
+using infra_kancel.Context.Factory;
+using infra_kancel.Context.Interface;
+using Microsoft.AspNetCore.Connections;
 using Microsoft.EntityFrameworkCore;
 
 namespace api_kancel
@@ -17,6 +20,7 @@ namespace api_kancel
         {
             services.AddControllers();
             services.AddInfrastructureServices();
+            services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
 
             services.AddDbContext<KancelContext>(options =>
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));

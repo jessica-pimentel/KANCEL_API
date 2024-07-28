@@ -10,7 +10,7 @@ namespace infra_kancel.Context
 {
     public class KancelContext : DbContext
     {
-        public DbSet<ApplicationUser> users { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
 
         public KancelContext(DbContextOptions<KancelContext> options) : base(options)
         {
