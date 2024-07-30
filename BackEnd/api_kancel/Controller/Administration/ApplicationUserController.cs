@@ -1,4 +1,5 @@
-﻿using domain_kancel.Interfaces.Repository.Administration;
+﻿using api_kancel.Controller.Grobal;
+using domain_kancel.Interfaces.Repository.Administration;
 using domain_kancel.Models.Administration;
 using domain_kancel.Service;
 using Microsoft.AspNetCore.Mvc;
@@ -7,7 +8,7 @@ namespace api_kancel.Controller.Administration
 {
     [ApiController]
     [Route("v1/[controller]")]
-    public class ApplicationUserController : ControllerBase
+    public class ApplicationUserController : BaseController
     {
         private readonly IApplicationUserService _applicationUserService;
         public ApplicationUserController(IApplicationUserService applicationUserService)
@@ -20,9 +21,9 @@ namespace api_kancel.Controller.Administration
         {
             var r = await _applicationUserService.Login(email, password);
 
-            if (r != null) return Ok(r);
+            if (r != null) return CustomResponse(r);
 
-            return BadRequest("Email ou senha errados, tente novamente!");
+            return CustomResponseError("Email ou senha errados, tente novamente!");
             
         }
 
@@ -31,9 +32,9 @@ namespace api_kancel.Controller.Administration
         {
             var r = await _applicationUserService.Add(obj);
 
-            if (r) return Ok("Cadastrado com sucesso, efetue Login!");
+            if (r) return CustomResponse("Cadastrado com sucesso, efetue Login!");
 
-            return BadRequest("Erro ao se cadastrar, tente novamente!");
+            return CustomResponseError("Erro ao se cadastrar, tente novamente!");
 
         }
 
@@ -42,9 +43,9 @@ namespace api_kancel.Controller.Administration
         {
             var r = await _applicationUserService.UpdatePassword(applicationUserId, newPassword, lastPassword);
 
-            if (r) return Ok("Senha atualizada com sucesso!");
+            if (r) return CustomResponse("Senha atualizada com sucesso!");
 
-            return BadRequest("Erro ao atualizar senha, tente novamente!");
+            return CustomResponseError("Erro ao atualizar senha, tente novamente!");
         }
     }
 }
