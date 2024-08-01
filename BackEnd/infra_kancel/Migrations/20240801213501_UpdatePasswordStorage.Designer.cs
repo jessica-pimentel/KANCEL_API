@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using infra_kancel.Context;
 
@@ -10,9 +11,11 @@ using infra_kancel.Context;
 namespace infra_kancel.Migrations
 {
     [DbContext(typeof(KancelContext))]
-    partial class KancelContextModelSnapshot : ModelSnapshot
+    [Migration("20240801213501_UpdatePasswordStorage")]
+    partial class UpdatePasswordStorage
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.7");
