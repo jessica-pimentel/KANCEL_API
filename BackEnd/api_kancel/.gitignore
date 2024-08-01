@@ -2,29 +2,64 @@
 .vs/
 *.vsidx
 *.vscode
+*.vs/
 
 # Pastas de build e binários
 bin/
 obj/
+**/bin/
+**/obj/
 
-# Pastas e arquivos de cache do Visual Studio
+# Pastas e arquivos de cache do Visual Studio e NuGet
 .vs/
 *.user
 *.suo
 *.vscode
+.nuget/
+packages/
+nuget.cache/
+*.nupkg
+*.snupkg
 
 # Arquivos de log
 *.log
-
-# Pastas do NuGet
-packages/
-*.nupkg
-*.snupkg
+*.log.*
 
 # Arquivos de configuração do IDE
 *.ide/
 .idea/
 
-# Pastas de Debug
+# Pastas de Debug e Release
 Debug/
 Release/
+**/Debug/
+**/Release/
+
+# DLLs
+*.dll
+*.exe
+*.so
+*.dylib
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.tlog
+
+# Arquivos de banco de dados locais
+*.mdf
+*.ldf
+
+# Arquivos de backup e outros arquivos gerados automaticamente
+_Backup/
+*.bak
+*.cache
+*.ilk
+*.ncb
+*.swp
+*DS_Store
+
+# Outros arquivos e pastas que devem ser ignorados
+node_modules/
+bower_components/
+jspm_packages/
