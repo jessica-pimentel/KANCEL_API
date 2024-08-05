@@ -2,8 +2,14 @@
 using infra_kancel.Context;
 using infra_kancel.Context.Factory;
 using infra_kancel.Context.Interface;
-using Microsoft.AspNetCore.Connections;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
+using System.IO;
 
 namespace api_kancel
 {
@@ -24,6 +30,17 @@ namespace api_kancel
 
             services.AddDbContext<KancelContext>(options =>
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+
+            // Configuração do Swagger
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "API Kancel",
+                    Version = "v1",
+                    Description = "API para gerenciamento de Kancel"
+                });
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -34,7 +51,7 @@ namespace api_kancel
             }
             else
             {
-                app.UseExceptionHandler("/Error"); 
+                app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
 
@@ -47,6 +64,14 @@ namespace api_kancel
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Kancel v1");
+                c.RoutePrefix = string.Empty;
+            });
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
