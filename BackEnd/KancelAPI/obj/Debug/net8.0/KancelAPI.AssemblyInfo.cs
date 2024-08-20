@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KancelAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abfcdf9744915170878138456991e26a15f78b74")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc76969451585e32bfeafe1c4a37ff3ac7cddd47")]
 [assembly: System.Reflection.AssemblyProductAttribute("KancelAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KancelAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
