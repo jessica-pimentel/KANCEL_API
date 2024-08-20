@@ -1,0 +1,54 @@
+﻿# Sistema
+*.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Arquivos de build
+[Bb]in/
+[Oo]bj/
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+**/[Dd]ebug*/
+**/[Rr]elease*/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.ilk
+*.log
+*.vspscc
+*.vssscc
+*.tmp
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Arquivos gerados pelo Visual Studio
+.vscode/
+.vs/
+
+# Diretório de pacotes NuGet
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Diretório de build no Azure
+site/wwwroot/
+
+# Arquivos de configuração locais
+appsettings.*.json
+appsettings.Development.json
+
+# Arquivos de log
+*.log
+*.tlog
+*.log2
+
+# Arquivos de publicação
+.publish/
