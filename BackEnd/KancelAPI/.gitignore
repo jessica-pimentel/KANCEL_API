@@ -9,8 +9,6 @@ Desktop.ini
 [Oo]bj/
 **/bin/
 **/obj/
-**/Debug/
-**/Release/
 **/[Dd]ebug*/
 **/[Rr]elease*/
 *.exe
@@ -30,6 +28,11 @@ Desktop.ini
 # Arquivos gerados pelo Visual Studio
 .vscode/
 .vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
 
 # Diretório de pacotes NuGet
 packages/
@@ -52,3 +55,33 @@ appsettings.Development.json
 
 # Arquivos de publicação
 .publish/
+
+# Arquivos gerados por ferramentas de teste
+TestResults/
+*.coverage
+*.coveragexml
+*.trx
+*.testsettings
+*.runsettings
+
+# Arquivos de backup e temporários
+_backup/
+_UpgradeReport_Files/
+_ReSharper.*/
+*.bak
+*.cache
+*.tmp
+*.tmp/*
+*.log
+
+# Arquivos de IDEs (Ex: Rider, VSCode, etc.)
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# Diretórios de compilação específicos
+node_modules/
+dist/
+build/
+coverage/
