@@ -3,11 +3,11 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using infra_kancel.Context;
+using KancelAPI.Context;
 
 #nullable disable
 
-namespace infra_kancel.Migrations
+namespace KancelAPI.Migrations
 {
     [DbContext(typeof(KancelContext))]
     partial class KancelContextModelSnapshot : ModelSnapshot
