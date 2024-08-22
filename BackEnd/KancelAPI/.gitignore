@@ -28,6 +28,10 @@ Desktop.ini
 # Arquivos gerados pelo Visual Studio
 .vscode/
 .vs/
+.vs/*/*.suo
+.vs/*/*.user
+.vs/*/*.userosscache
+.vs/*/*.sln.docstates
 *.suo
 *.user
 *.userosscache
