@@ -1,4 +1,5 @@
 ﻿using KancelAPI.Enum;
+using KancelAPI.Models.Enum;
 using KancelAPI.Models.Global;
 
 namespace KancelAPI.Models.Financial
@@ -11,5 +12,6 @@ namespace KancelAPI.Models.Financial
         public decimal Value { get; set; }
         public EPaymentType PaymentType { get; set; }
         public DateTime PaymentDate { get; set; }
+        public EStatus StatusPayment { get; set; }
     }
 }
